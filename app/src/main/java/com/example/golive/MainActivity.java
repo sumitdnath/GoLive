@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
         {
 
-            return false;
+            return true;
         }
     };
 
