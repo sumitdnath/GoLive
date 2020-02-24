@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82803180798",
+    "firebase_url": "https://golive-9e41b.firebaseio.com",
+    "project_id": "golive-9e41b",
+    "storage_bucket": "golive-9e41b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82803180798:android:36858bad9a385b9b3051af",
+        "android_client_info": {
+          "package_name": "com.example.golive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82803180798-doonn8bqesocp51ek3a26luj5b1gmod6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.golive",
+            "certificate_hash": "7799c29760553732fe93567a3e7c47262f9ff7cd"
+          }
+        },
+        {
+          "client_id": "82803180798-k44fmmgpts0a1es1fak84jnc3348t9mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWr3eej2Spv9XSNcwhRgGp6cW6VFDlbkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82803180798-k44fmmgpts0a1es1fak84jnc3348t9mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
