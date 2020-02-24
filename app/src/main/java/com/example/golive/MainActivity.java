@@ -1,9 +1,11 @@
 package com.example.golive;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +34,31 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
         {
+            switch (menuItem.getItemId())
+            {
+                case R.id.navigation_home:
+                    Intent mainIntent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(mainIntent);
+                    break;
+
+                case R.id.navigation_settings:
+                    Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                    startActivity(settingsIntent);
+                    break;
+
+                case R.id.navigation_notifications:
+                    Intent notificationsIntent = new Intent(MainActivity.this, NotificationsActivity.class);
+                    startActivity(notificationsIntent);
+                    break;
+
+                case R.id.navigation_logout:
+                    FirebaseAuth.getInstance().signOut();
+                    Intent logoutIntent = new Intent(MainActivity.this,LoginActivity.class);
+                    startActivity(logoutIntent);
+                    finish();
+                    break;
+            }
+
 
             return true;
         }
