@@ -3,6 +3,7 @@ package com.example.golive;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -32,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         findPeopleBtn = findViewById(R.id.find_people_btn);
         myContactsList = findViewById(R.id.contacts_list);
         myContactsList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+
+        findPeopleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent findPeopleIntent = new Intent(MainActivity.this, FindPeopleActivity.class);
+                startActivity(findPeopleIntent);
+
+            }
+        });
 
     }
 

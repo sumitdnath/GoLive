@@ -37,9 +37,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="12dp"
                     android:src="@drawable/find_people"
-                    android:tint="@android:color/white"
-                    >
-                </ImageView>
+                    android:tint="@android:color/white"></ImageView>
 
             </RelativeLayout>
 
@@ -49,11 +47,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contacts_list"
-        android:layout_below="@id/app_bar_layout_contacts"
-        android:layout_above="@id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_above="@id/nav_view"
+        android:layout_below="@id/app_bar_layout_contacts">
 
     </androidx.recyclerview.widget.RecyclerView>
 
